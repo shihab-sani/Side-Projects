@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.collections.ObservableList?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <Label text="Assign Roles and Permissions" style="-fx-font-size: 20px; -fx-font-weight: bold;"
+               alignment="CENTER"/>
+    </top>
+    <center>
+        <VBox spacing="15" alignment="CENTER" padding="20">
+            <HBox spacing="10">
+                <Label text="Select User:" />
+                <ComboBox fx:id="userComboBox" promptText="Select User from List" />
+            </HBox>
+            
+            <HBox spacing="10">
+                <Label text="Assign Role:" />
+                <ComboBox fx:id="roleComboBox">
+                    <items>
+                        <ObservableList fx:factory="observableArrayList">
+                            <String fx:value="Viewer" />
+                            <String fx:value="Editor" />
+                            <String fx:value="Admin" />
+                        </ObservableList>
+                    </items>
+                </ComboBox>
+            </HBox>
+            
+            <Button text="Update Role" fx:id="updateButton"
+                    style="-fx-font-size: 14px; -fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+        </VBox>
+    </center>
+    <bottom>
+        <Label text="Status: Ready to Assign Roles" fx:id="statusLabel"
+               style="-fx-font-size: 12px;" alignment="CENTER"/>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #37474F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meal.system.User.AdministratorController.overviewPageController">
+   <left>
+      <Pane prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: #00838F; -fx-background-radius: 20px;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="197.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-cursor: hand;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="9.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Logos/home.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="80.0" layoutY="13.0" prefHeight="34.0" prefWidth="77.0" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="273.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-cursor: hand;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="12.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Logos/personal-profile.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="77.0" layoutY="12.0" prefHeight="34.0" prefWidth="149.0" text="Information" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="349.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-cursor: hand;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="10.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Logos/add-user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="77.0" layoutY="12.0" prefHeight="34.0" prefWidth="116.0" text="Add User" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="425.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-cursor: hand;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="9.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Logos/conversation.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="76.0" layoutY="11.0" prefHeight="34.0" prefWidth="122.0" text="Messages" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="657.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #B71C1C; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-cursor: hand;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="13.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Logos/logout.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="79.0" layoutY="12.0" prefHeight="34.0" prefWidth="102.0" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="500.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-cursor: hand;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="10.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Logos/setting.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="75.0" layoutY="11.0" prefHeight="34.0" prefWidth="102.0" text="Settings" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="105.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Logos/man-in-suit-and-tie.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="83.0" layoutY="116.0" text="User Name" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="85.0" layoutY="143.0" text="Administrator" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="23.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../../Logos/burger-bar.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Pane>
+   </left>
+   <padding>
+      <Insets bottom="10.0" left="10.0" top="10.0" />
+   </padding>
+   <center>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #00838F; -fx-background-radius: 20px; -fx-border-color: transparent;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="15.0" right="12.0" />
+         </BorderPane.margin>
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Line endX="760.9999389648438" layoutX="118.0" layoutY="104.0" startX="-100.0" AnchorPane.leftAnchor="17.5" AnchorPane.rightAnchor="13.200061035156182" />
+            <Label layoutX="540.0" layoutY="39.0" prefHeight="34.0" prefWidth="72.0" text="Total:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="612.0" layoutY="39.0" prefHeight="34.0" prefWidth="90.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="723.0" layoutY="39.0" prefHeight="34.0" prefWidth="63.0" text="Due:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="783.0" layoutY="39.0" prefHeight="34.0" prefWidth="90.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="23.0" prefHeight="22.0" prefWidth="51.0" text="Date:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="23.0" prefHeight="20.0" prefWidth="90.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="62.0" prefHeight="22.0" prefWidth="88.0" text="Due Date:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="62.0" prefHeight="20.0" prefWidth="90.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <LineChart layoutX="18.0" layoutY="126.0" prefHeight="280.0" prefWidth="520.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-padding: 5;">
+              <xAxis>
+                <CategoryAxis endMargin="35.0" side="BOTTOM" startMargin="1.0" tickLabelFill="WHITE" tickLabelGap="5.0" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" tickLabelFill="WHITE" upperBound="200.0" />
+              </yAxis>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </LineChart>
+            <AnchorPane layoutX="568.0" layoutY="126.0" prefHeight="280.0" prefWidth="310.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label layoutX="12.0" layoutY="14.0" prefHeight="34.0" prefWidth="55.0" text="Gas" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="60.0" prefHeight="34.0" prefWidth="123.0" text="Electricity" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="105.0" prefHeight="34.0" prefWidth="94.0" text="Service" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="151.0" prefHeight="34.0" prefWidth="74.0" text="Water" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="194.0" prefHeight="34.0" prefWidth="52.0" text="Bua" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="234.0" prefHeight="34.0" prefWidth="55.0" text="WiFi" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="135.0" layoutY="60.0" prefHeight="34.0" prefWidth="16.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="135.0" layoutY="14.0" prefHeight="34.0" prefWidth="16.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="135.0" layoutY="105.0" prefHeight="34.0" prefWidth="16.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="135.0" layoutY="151.0" prefHeight="34.0" prefWidth="16.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="135.0" layoutY="194.0" prefHeight="34.0" prefWidth="16.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="135.0" layoutY="234.0" prefHeight="34.0" prefWidth="16.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="155.0" layoutY="14.0" prefHeight="34.0" prefWidth="100.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="155.0" layoutY="60.0" prefHeight="34.0" prefWidth="100.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="155.0" layoutY="105.0" prefHeight="34.0" prefWidth="100.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="155.0" layoutY="151.0" prefHeight="34.0" prefWidth="100.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="155.0" layoutY="194.0" prefHeight="34.0" prefWidth="100.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="155.0" layoutY="234.0" prefHeight="34.0" prefWidth="100.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="262.0" layoutY="18.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: D84315; -fx-background-radius: 20px; -fx-cursor: hand;" text="Edit" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button layoutX="262.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: D84315; -fx-background-radius: 20px; -fx-cursor: hand;" text="Edit" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button layoutX="262.0" layoutY="109.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: D84315; -fx-background-radius: 20px; -fx-cursor: hand;" text="Edit" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button layoutX="262.0" layoutY="155.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: D84315; -fx-background-radius: 20px; -fx-cursor: hand;" text="Edit" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button layoutX="262.0" layoutY="198.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: D84315; -fx-background-radius: 20px; -fx-cursor: hand;" text="Edit" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button layoutX="262.0" layoutY="238.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: #D84315; -fx-background-radius: 20px; -fx-cursor: hand;" text="Edit" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ScrollPane layoutX="18.0" layoutY="428.0" prefHeight="287.0" prefWidth="714.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-padding: 8;">
+               <content>
+                  <AnchorPane prefHeight="271.0" prefWidth="698.0" style="-fx-background-color: #006064;">
+                     <children>
+                        <Line endX="591.3999633789062" layoutX="102.0" layoutY="85.0" startX="-100.0" />
+                        <Line endX="-100.00003051757812" endY="263.0" layoutX="403.0" layoutY="1.0" startX="-100.0" />
+                        <Label layoutX="107.0" layoutY="28.0" prefHeight="34.0" prefWidth="74.0" text="Name" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="369.0" layoutY="28.0" prefHeight="34.0" prefWidth="82.0" text="Lunch" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Line endX="-100.00006103515625" endY="263.800048828125" layoutX="616.0" layoutY="1.0" startX="-100.0" />
+                        <Label layoutX="581.0" layoutY="28.0" prefHeight="34.0" prefWidth="82.0" text="Dinner" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ScrollPane>
+            <Button layoutX="758.0" layoutY="497.0" mnemonicParsing="false" prefHeight="131.0" prefWidth="122.0" style="-fx-background-color: #BF360C; -fx-background-radius: 20px; -fx-cursor: hand;" text="Update" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #37474F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meal.system.User.AdministratorController.overviewPageController">
+   <left>
+      <Pane prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: #00838F; -fx-background-radius: 20px;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="197.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-cursor: hand;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="9.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Logos/home.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="80.0" layoutY="13.0" prefHeight="34.0" prefWidth="77.0" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="273.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-cursor: hand;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="12.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Logos/personal-profile.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="77.0" layoutY="12.0" prefHeight="34.0" prefWidth="149.0" text="Information" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="349.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-cursor: hand;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="10.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Logos/add-user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="77.0" layoutY="12.0" prefHeight="34.0" prefWidth="116.0" text="Add User" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="425.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-cursor: hand;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="9.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Logos/conversation.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="76.0" layoutY="11.0" prefHeight="34.0" prefWidth="122.0" text="Messages" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="657.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #B71C1C; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-cursor: hand;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="13.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Logos/logout.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="79.0" layoutY="12.0" prefHeight="34.0" prefWidth="102.0" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="500.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-cursor: hand;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="10.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Logos/setting.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="75.0" layoutY="11.0" prefHeight="34.0" prefWidth="102.0" text="Settings" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="105.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Logos/man-in-suit-and-tie.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="83.0" layoutY="116.0" text="User Name" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="85.0" layoutY="143.0" text="Administrator" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="23.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../../Logos/burger-bar.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Pane>
+   </left>
+   <padding>
+      <Insets bottom="10.0" left="10.0" top="10.0" />
+   </padding>
+   <center>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #00838F; -fx-background-radius: 20px;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="15.0" right="12.0" />
+         </BorderPane.margin>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </center>
+</BorderPane>

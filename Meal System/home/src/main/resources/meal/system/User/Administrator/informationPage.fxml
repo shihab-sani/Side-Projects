@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #00838F; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-color: transparent;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutX="333.0" layoutY="18.0" prefHeight="570.0" prefWidth="455.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-padding: 8;">
+         <content>
+            <AnchorPane prefHeight="554.0" prefWidth="439.0" style="-fx-background-color: #006064;">
+               <children>
+                  <Label layoutX="29.0" layoutY="28.0" prefHeight="34.0" prefWidth="74.0" text="Total:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Line endX="336.800048828125" layoutX="97.0" layoutY="86.0" startX="-100.0" />
+                  <Label layoutX="259.0" layoutY="28.0" prefHeight="34.0" prefWidth="61.0" text="Due:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="103.0" layoutY="28.0" prefHeight="34.0" prefWidth="90.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="321.0" layoutY="28.0" prefHeight="34.0" prefWidth="90.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ScrollPane>
+      <ScrollPane layoutX="14.0" layoutY="15.0" prefHeight="570.0" prefWidth="295.0" style="-fx-background-color: #006064; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-padding: 8;">
+         <content>
+            <AnchorPane prefHeight="554.0" prefWidth="279.0" style="-fx-background-color: #006064;">
+               <children>
+                  <Label layoutX="110.0" layoutY="27.0" prefHeight="34.0" prefWidth="59.0" text="User" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Line endX="172.20001220703125" layoutX="102.0" layoutY="89.0" startX="-100.0" />
+               </children>
+            </AnchorPane>
+         </content>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ScrollPane>
+   </children>
+</AnchorPane>
